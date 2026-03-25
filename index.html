@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -9,5 +9,139 @@
 <body>
     <h1>Hello folks</h1>
     <p>You can connect me on my linkedIn profile</p>
+    <table >
+        <tr>
+            <th>Name</th>
+            <th>Roll Number</th>
+            <th>College Name</th>
+        </tr>
+    </table>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+  <h1>My Portfolio</h1>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#profile">Profile</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section id="home" class="section">
+  <h2>Welcome</h2>
+  <p>This is a stunning personal portfolio homepage.</p>
+</section>
+
+<section id="about" class="section">
+  <h2>About Us</h2>
+  <p>I am a passionate developer learning DSA, AI, and building amazing projects.</p>
+</section>
+
+<section id="profile" class="section">
+  <h2>Profile</h2>
+  <p>Name: Your Name</p>
+  <p>Skills: C++, DSA, Web Development</p>
+
+  <div class="links">
+    <a href="https://leetcode.com/" target="_blank">LeetCode</a>
+    <a href="https://github.com/" target="_blank">GitHub</a>
+  </div>
+</section>
+
+<section id="contact" class="section">
+  <h2>Contact Us</h2>
+  <form>
+    <input type="text" placeholder="Your Name" required>
+    <input type="email" placeholder="Your Email" required>
+    <textarea placeholder="Your Message" required></textarea>
+    <button type="submit">Send</button>
+  </form>
+</section>
+
+<footer>
+  <p>© 2026 My Portfolio</p>
+</footer>
+
 </body>
 </html>
+
+/* ================= CSS ================= */
+
+<style>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(120deg, #1e3c72, #2a5298);
+  color: white;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 40px;
+  background: rgba(0,0,0,0.3);
+}
+
+nav a {
+  margin: 0 10px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.section {
+  padding: 60px 40px;
+  text-align: center;
+}
+
+.links a {
+  display: inline-block;
+  margin: 10px;
+  padding: 10px 20px;
+  background: white;
+  color: #2a5298;
+  border-radius: 20px;
+  text-decoration: none;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: auto;
+}
+
+form input, form textarea {
+  margin: 10px 0;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+}
+
+button {
+  padding: 10px;
+  background: #ff7e5f;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: rgba(0,0,0,0.3);
+}
+</style>
